@@ -1,0 +1,243 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .profile .info {
+    flex-grow: 1;
+  }
+
+  .profile .info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .profile .info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .repositories {
+    margin-top: 20px;
+  }
+
+  .repository {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .repository h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .repository p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+  max-width: 100%;
+  max-width: 100%;
+  padding: 16px;
+}
+.header {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 100%;
+  height: 64px;
+  background-color: #24292f;
+
+  /* background-color: blue; */
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 25px;
+  height: 25px;
+}
+.logo {
+  align-self: center;
+  margin-right: 10px;
+}
+.search {
+  display: flex;
+  width: 300px;
+  border: 2px solid #363c44;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.search p {
+  margin-left: 10px;
+}
+.navbar-headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-headers p {
+  margin: 0px 20px;
+  font-weight: 600;
+}
+.user-navbar {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.user-navbar p {
+  margin-right: 20px;
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 30px;
+}
+hr {
+  opacity: 0.5;
+}
+
+.middle-section-userinfo {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 20px;
+}
+.leftside-info {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+.leftside-info img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.leftside-info .userinfo {
+  align-self: flex-start;
+}
+.container-of-repos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.repo-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.all-repo-info {
+  border: 2px solid #d0d7de;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  height: 150px;
+  padding: 15px;
+}
+.public {
+  border: 1px solid #98a1ab;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+}
+.bot-of-repo {
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: flex-end; */
+  width: 100%;
+  height: 77%;
+  font-weight: 100;
+  font-size: 12px;
+}
+hr {
+  margin-bottom: 30px;
+}
+.container-repos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+.nameofuser {
+  margin: 20px 0px;
+}
+.location {
+  margin-top: 20px;
+}
+.top-of-repo {
+  display: flex;
+  justify-content: space-between;
+}
+.top-of-repo a {
+  color: #0969da;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* Add more CSS rules for other elements as needed */
