@@ -11,6 +11,7 @@ body {
 .container {
   max-width: 100%;
   max-width: 100%;
+  margin-bottom: 100px;
   /* padding: 16px; */
 }
 
@@ -26,6 +27,7 @@ body {
   align-items: center;
   color: white;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .left-header {
   display: flex;
@@ -41,13 +43,17 @@ img {
 }
 .search {
   display: flex;
-  width: 300px;
+  width: 250px;
+  margin-left: 10px;
   border: 2px solid #363c44;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+}
+button {
+  border: none;
 }
 .search p {
   margin-left: 10px;
@@ -91,6 +97,7 @@ hr {
   width: 25%;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 .leftside-info img {
   width: 260px;
@@ -109,11 +116,13 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
+  flex-wrap: wrap;
 }
 .repo-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .all-repo-info {
   /* border: 2px solid #d0d7de; */
