@@ -54,6 +54,10 @@ img {
 }
 button {
   border: none;
+  margin-left: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
 }
 .search p {
   margin-left: 10px;
