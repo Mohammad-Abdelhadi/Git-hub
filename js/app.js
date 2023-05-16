@@ -4,6 +4,8 @@ let button = divsearch.querySelector(".button");
 
 const usernameElement = document.querySelector(".nameofuser .username");
 const secondname = document.querySelector(".nameofuser .secondname");
+const rightnav = document.querySelector(".right-nav ");
+const ofrightnav = rightnav.querySelector(".profile-picture");
 
 button.addEventListener("click", function () {
   fetch(`https://api.github.com/users/${input.value}`)
@@ -18,12 +20,13 @@ button.addEventListener("click", function () {
       bio.textContent = data.bio || "";
       location.textContent = data.location || " ";
       picture.src = data.avatar_url || " theres not photo";
-
+      ofrightnav.src = data.avatar_url;
       usernameElement.textContent = data.name || "";
       secondname.textContent = data.login || "";
 
       userinfo.appendChild(bio);
       userinfo.appendChild(location);
+      rightnav.appendChild(ofrightnav);
     });
 
   fetch(`https://api.github.com/users/${input.value}/repos`)
@@ -32,7 +35,7 @@ button.addEventListener("click", function () {
       const allrepoinfo = document.querySelector(".container-repos");
       allrepoinfo.innerHTML = "";
 
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < repositories.length; i++) {
         const reposubject = document.createElement("div");
         reposubject.className = "all-repo-info";
         reposubject.style.border = "2px solid #d0d7de";
