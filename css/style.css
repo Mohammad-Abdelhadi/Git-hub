@@ -11,8 +11,9 @@ body {
 .container {
   max-width: 100%;
   max-width: 100%;
-  padding: 16px;
+  /* padding: 16px; */
 }
+
 .header {
   display: flex;
   font-size: 14px;
@@ -20,7 +21,7 @@ body {
   max-width: 100%;
   height: 64px;
   background-color: #24292f;
-
+  padding: 16px;
   /* background-color: blue; */
   align-items: center;
   color: white;
@@ -65,7 +66,7 @@ img {
   height: 48px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .user-navbar p {
   margin-right: 20px;
@@ -115,7 +116,7 @@ hr {
   margin-bottom: 10px;
 }
 .all-repo-info {
-  border: 2px solid #d0d7de;
+  /* border: 2px solid #d0d7de; */
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
