@@ -9,10 +9,10 @@
   height: 100vh;
   margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px 20px;
+  flex-wrap: wrap;
   /* gap accept column & row
  */
 }
@@ -41,8 +41,8 @@
   margin: 0 40px;
 }
 img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 .button {

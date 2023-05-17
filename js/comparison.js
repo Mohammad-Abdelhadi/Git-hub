@@ -12,12 +12,7 @@ form.addEventListener("submit", function (event) {
     .then((data) => {
       username.innerHTML = data.name || data.login;
       img.src = data.avatar_url;
-    });
-
-  fetch(`https://api.github.com/users/${input.value}/repos`)
-    .then((response) => response.json())
-    .then((repositories) => {
-      reponumber.innerHTML = `Number Of Repos: ${repositories.length}`;
+      reponumber.innerHTML = `Number Of Repos: ${data.public_repos}`;
     });
 });
 
@@ -35,21 +30,21 @@ formtwo.addEventListener("submit", function (event) {
     .then((data) => {
       usernametwo.innerHTML = data.name || data.login;
       imgtwo.src = data.avatar_url;
-    });
-
-  fetch(`https://api.github.com/users/${inputtwo.value}/repos`)
-    .then((response) => response.json())
-    .then((repositories) => {
-      reponumbertwo.innerHTML = `Number Of Repos: ${repositories.length}`;
+      reponumbertwo.innerHTML = `Number Of Repos: ${data.public_repos}`;
     });
 });
 
 let button = document.querySelector(".button");
 button.addEventListener("click", function () {
   if (inputtwo.value !== "" && input.value !== "") {
-    if (parseInt(reponumbertwo.innerHTML.split(" ")[3]) > parseInt(reponumber.innerHTML.split(" ")[3])) {
+    if (
+      parseInt(reponumbertwo.innerHTML.split(" ")[3]) >
+      parseInt(reponumber.innerHTML.split(" ")[3])
+    ) {
+
       alert(inputtwo.value + " is the winner");
     } else {
+
       alert(input.value + " is the winner");
     }
   } else {
