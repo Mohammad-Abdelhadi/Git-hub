@@ -1,11 +1,11 @@
 let divsearch = document.querySelector(".search");
-let input = divsearch.querySelector(".input");
-let button = divsearch.querySelector(".button");
+let input = document.querySelector(".search .input");
+let button = document.querySelector(".search .button");
 
 const usernameElement = document.querySelector(".nameofuser .username");
 const secondname = document.querySelector(".nameofuser .secondname");
-const rightnav = document.querySelector(".right-nav ");
-const ofrightnav = rightnav.querySelector(".profile-picture");
+const rightnav = document.querySelector(".right-nav");
+const ofrightnav = document.querySelector(".right-nav .profile-picture");
 
 button.addEventListener("click", function () {
   fetch(`https://api.github.com/users/${input.value}`)
@@ -23,7 +23,6 @@ button.addEventListener("click", function () {
       ofrightnav.src = data.avatar_url;
       usernameElement.textContent = data.name || "";
       secondname.textContent = data.login || "";
-
       userinfo.appendChild(bio);
       userinfo.appendChild(location);
       rightnav.appendChild(ofrightnav);
