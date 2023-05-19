@@ -44,6 +44,7 @@ button.addEventListener("click", function () {
 
       alert(inputtwo.value + " is the winner");
     } else {
+      button.style.display = "none";
 
       alert(input.value + " is the winner");
     }

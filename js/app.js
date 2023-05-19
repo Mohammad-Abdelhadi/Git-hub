@@ -1,7 +1,7 @@
 let divsearch = document.querySelector(".search");
 let input = document.querySelector(".search .input");
 let button = document.querySelector(".search .button");
-
+let searchform = document.querySelector(".searchform");
 const usernameElement = document.querySelector(".nameofuser .username");
 const secondname = document.querySelector(".nameofuser .secondname");
 const rightnav = document.querySelector(".right-nav");
@@ -13,6 +13,7 @@ button.addEventListener("click", function () {
     .then((data) => {
       const leftside_info = document.querySelector(".leftside-info");
       const picture = leftside_info.querySelector("img");
+      picture.classList.add("flipped");
       const userinfo = document.querySelector(".userinfo");
       const bio = userinfo.querySelector(".bio");
       const location = userinfo.querySelector(".location");
@@ -26,11 +27,27 @@ button.addEventListener("click", function () {
       userinfo.appendChild(bio);
       userinfo.appendChild(location);
       rightnav.appendChild(ofrightnav);
+      picture.classList.remove("flipped");
+      picture.classList.remove("flipped");
+      bio.classList.remove("flipped");
+      usernameElement.classList.remove("flipped");
+      secondname.classList.remove("flipped");
+      location.classList.remove("flipped");
+      setTimeout(() => {
+        picture.classList.add("flipped");
+        bio.classList.add("flipped");
+        usernameElement.classList.add("flipped");
+        secondname.classList.add("flipped");
+        location.classList.add("flipped");
+      
+      }, 10);
     });
 
   fetch(`https://api.github.com/users/${input.value}/repos`)
     .then((response) => response.json())
     .then((repositories) => {
+      const soundEffect = new Audio("../images/drop.mp3");
+
       const allrepoinfo = document.querySelector(".container-repos");
       allrepoinfo.innerHTML = "";
 
@@ -58,10 +75,36 @@ button.addEventListener("click", function () {
         botOfRepo.className = "bot-of-repo";
         botOfRepo.textContent =
           repositories[i].language || "No specific language";
-
         reposubject.appendChild(topOfRepo);
         reposubject.appendChild(botOfRepo);
         allrepoinfo.appendChild(reposubject);
+
+        reposubject.classList.remove("test");
+        repoLink.classList.remove("test");
+        botOfRepo.classList.remove("test");
+        topOfRepo.classList.remove("test");
+        allrepoinfo.classList.remove("test");
+        setTimeout(() => {
+          reposubject.classList.add("test");
+          repoLink.classList.add("test");
+          botOfRepo.classList.add("test");
+          topOfRepo.classList.add("test");
+          allrepoinfo.classList.add("test");
+          soundEffect.play();
+        }, 1100 * i );
       }
     });
 });
+
+const hamburgerIcon = document.querySelector(".humbrger");
+const hamburgerMenu = document.querySelector(".responisve-humbrger");
+
+hamburgerIcon.addEventListener("click", function () {
+  if (hamburgerMenu.style.display === "none") {
+    hamburgerMenu.style.display = "flex";
+  } else {
+    hamburgerMenu.style.display = "none";
+  }
+});
+
+//
