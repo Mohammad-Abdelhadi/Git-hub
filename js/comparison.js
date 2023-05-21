@@ -45,11 +45,30 @@ button.addEventListener("click", function () {
       // Add celebration animation to winner
 
       alert(inputtwo.value + " is the winner");
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000);
+      };
+
+      start();
+
+      confetti();
     } else {
       // Hide loser
       // Add celebration animation to winner
 
       alert(input.value + " is the winner");
+
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000);
+      };
+
+      start();
+
+      confetti();
     }
 
     // Show confetti
