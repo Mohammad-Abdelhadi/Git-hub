@@ -7,7 +7,7 @@ let soundEffect = null; // Declare a variable to store the sound effect
 
 searchButtons.forEach((button) => {
   let input = button.parentElement.querySelector(".input");
-  button.addEventListener("click", function() {
+  button.addEventListener("click", function () {
     soundEffect = 0;
     fetch(`https://api.github.com/users/${input.value}`)
       .then((response) => response.json())

@@ -3,7 +3,8 @@ let username = document.querySelector(".username");
 let form = document.querySelector(".form");
 let reponumber = document.querySelector(".reponumber");
 let img = document.querySelector(".leftside img");
-
+const winner = document.querySelector(".winner");
+const loser = document.querySelector(".loser");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -41,13 +42,17 @@ button.addEventListener("click", function () {
       parseInt(reponumbertwo.innerHTML.split(" ")[3]) >
       parseInt(reponumber.innerHTML.split(" ")[3])
     ) {
+      // Add celebration animation to winner
 
       alert(inputtwo.value + " is the winner");
     } else {
-      button.style.display = "none";
+      // Hide loser
+      // Add celebration animation to winner
 
       alert(input.value + " is the winner");
     }
+
+    // Show confetti
   } else {
     alert("Please enter a value");
   }

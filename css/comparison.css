@@ -6,16 +6,16 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px 20px;
   padding: 10px;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  margin: auto;
 }
-
-.leftside,
-.rightside {
+.leftside {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,13 +35,13 @@
 .leftside h1,
 .rightside h1 {
   margin: 10px 0;
-  font-size: 1rem;
+  font-size: 0.7rem;
   max-width: 100%;
 }
 
 img {
-  width: 100%;
-  max-width: 300px;
+  width: 50%;
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
 }
@@ -49,11 +49,15 @@ img {
 .button {
   background-color: green;
   width: 100%;
-  max-width: 300px;
   color: white;
   height: 40px;
 }
-
+.winner {
+  display: none;
+}
+.loser {
+  display: none;
+}
 .Home {
   width: 100%;
   display: flex;
@@ -62,5 +66,5 @@ img {
   text-decoration: none;
   color: white;
   background-color: black;
-  height: 100px;
+  height: 50px;
 }

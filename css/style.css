@@ -75,15 +75,18 @@ button {
   color: white;
   cursor: pointer;
   border: 1px solid white;
-
+  border-radius: 50px;
   width: 75px;
   text-decoration: none;
   text-align: center;
-  background-color: red;
-  background-image: linear-gradient(to right, green 50%, red 50%);
+  background-color: green;
   background-size: 200% 100%;
   transition: background-position 0.3s;
   padding-bottom: 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 .comparison:hover {
   background-position: -100% 0;
@@ -251,13 +254,17 @@ hr {
 
 .all-repo-info {
   position: relative;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   opacity: 0;
   transition: transform 2s ease, opacity 0.5s ease;
   -webkit-transition: transform 2s ease, opacity 0.5s ease;
   -moz-transition: transform 2s ease, opacity 0.5s ease;
   -ms-transition: transform 2s ease, opacity 0.5s ease;
   -o-transition: transform 2s ease, opacity 0.5s ease;
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
 }
 
 .all-repo-info.test {
@@ -336,7 +343,6 @@ hr {
     cursor: pointer;
     border: none;
     margin-left: 35px;
-    border-radius: 0;
     padding-bottom: 4px;
     font-size: 10px;
     text-decoration: none;
@@ -453,7 +459,6 @@ hr {
     cursor: pointer;
     border: none;
     margin-left: 35px;
-    border-radius: 0;
     padding-bottom: 4px;
     font-size: 10px;
     text-decoration: none;
@@ -559,16 +564,19 @@ hr {
     font-size: 11px;
   }
   .comparison {
-    /* border: none; */
-    cursor: pointer;
+    /*border: none;
+    */cursor: pointer;
     border: none;
     margin-left: 35px;
-    border-radius: 0;
     padding-bottom: 4px;
     font-size: 10px;
     text-decoration: none;
     text-align: center;
-  }
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
   .repo-info span {
     font-size: 9px;
   }
@@ -651,7 +659,6 @@ hr {
   .comparison {
     border: none;
     margin-left: 35px;
-    border-radius: 0;
     padding-bottom: 4px;
     width: 70px;
   }
@@ -665,7 +672,7 @@ hr {
   .comparison {
     border: none;
     margin-left: 35px;
-    border-radius: 0;
+    border-radius: 50px;
     padding-bottom: 4px;
     width: 112px;
     font-size: 14px;
@@ -694,5 +701,10 @@ hr {
     border: none;
     margin-left: 45px;
     width: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
   }
 }
