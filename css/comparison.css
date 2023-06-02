@@ -3,54 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  /* background-image: url(../images/vs8-edited.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  /* background: linear-gradient(to right, #D3E0DC 50%, #E7EFF2 50%); */
+  /* background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%); */
+  background: linear-gradient(to right, #D3E0DC 50%, #E7EFF2 50%);
+  background: linear-gradient(to right, #F0E5D8 50%, #F6F3F0 50%);
+  background: linear-gradient(to right, #EAE7DC 50%, #F5F3E6 50%);
+  background: linear-gradient(to right, #D3E4F5 50%, #E8F2FF 50%);
+  background: linear-gradient(to right, #D8EFEF 50%, #EAF9F9 50%);
+  background: linear-gradient(to right, #F3EBD6 50%, #FBF6E9 50%);
+  background: linear-gradient(to right, #F0E8D6 50%, #F8F6EB 50%);
+  background: linear-gradient(to right, #E6E4EC 50%, #F1F1F5 50%);
+  background: linear-gradient(to right, #E8EAEF 50%, #F2F4F8 50%);
+  background: linear-gradient(to right, #DCE3E8 50%, #E8F0F6 50%);
+  background: linear-gradient(to right, #F6F0E4 50%, #FEF9F3 50%);
+  background: linear-gradient(to right, #EBE7D5 50%, #F6F3EB 50%);
+  background: linear-gradient(to right, #DCE3E8 50%, #E8F0F6 50%);
+  background: linear-gradient(to right, #EAE4D2 50%, #F5F2E8 50%);
+  background: linear-gradient(to right, #F3F1E9 50%, #FBFAF4 50%);
+  background: linear-gradient(to right, #D2E5E8 50%, #E7F2F4 50%);
+  background: linear-gradient(to right, #F3ECE2 50%, #FBF8F3 50%);
+  background: linear-gradient(to right, #E2E5EA 50%, #F2F4F8 50%);
+  background: linear-gradient(to right, #D8E8E9 50%, #EAF6F6 50%);
+  background: linear-gradient(to right, #D8E8E9 50%, #EAF6F6 50%);
+  background: linear-gradient(to right, #F0E5D8 50%, #F6F3F0 50%);
+  background: linear-gradient(to right, #EAE7DC 50%, #F5F3E6 50%);
+  background: linear-gradient(to right, #E6E4EC 50%, #F1F1F5 50%);
+  background: linear-gradient(to right, #D3E4F5 50%, #E8F2FF 50%);
+}
+.green-title {
+  color: green;
+}
 
+.leftside p,
+.rightside p,
+.rightside img,
+.leftside h1,
+.rightside h1 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  max-width: 100%;
+  color: black;
+}
+.leftside input,
+.rightside input {
+  color: black;
+  font-size: 1.3rem;
+}
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px 20px;
   padding: 10px;
   justify-content: center;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   margin: auto;
 }
+
 .leftside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ebebeb;
-  border: 1px solid #1f1f1f;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.leftside p,
-.rightside p,
-.leftside img,
-.rightside img,
-.leftside input,
-.rightside input,
-.leftside h1,
-.rightside h1 {
-  margin: 10px 0;
-  font-size: 0.7rem;
-  max-width: 100%;
-}
-
-img {
+  gap: 10px 0px;
+  border: 1px solid black;
+  padding: 19px;
+  margin: 0 auto; /* Add this line */
   width: 50%;
-  max-width: 200px;
-  height: auto;
+  height: 70%;
+}
+
+.leftside img {
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
+
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .button {
-  background-color: green;
-  width: 100%;
+  justify-content: center;
+  background-color: #000;
+  /* width: 100%; */
   color: white;
   height: 40px;
+  margin: 0 auto;
+  display: flex;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .winner {
   display: none;

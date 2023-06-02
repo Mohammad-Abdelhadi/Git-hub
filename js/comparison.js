@@ -1,13 +1,10 @@
+let form = document.querySelector(".form");
 let input = document.querySelector(".input");
 let username = document.querySelector(".username");
-let form = document.querySelector(".form");
-let reponumber = document.querySelector(".reponumber");
 let img = document.querySelector(".leftside img");
-const winner = document.querySelector(".winner");
-const loser = document.querySelector(".loser");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+let reponumber = document.querySelector(".reponumber");
 
+input.addEventListener("input", function () {
   fetch(`https://api.github.com/users/${input.value}`)
     .then((response) => response.json())
     .then((data) => {
@@ -20,12 +17,10 @@ form.addEventListener("submit", function (event) {
 let formtwo = document.querySelector(".formtwo");
 let inputtwo = document.querySelector(".inputtwo");
 let usernametwo = document.querySelector(".usernametwo");
-let reponumbertwo = document.querySelector(".reponumbertwo");
 let imgtwo = document.querySelector(".leftside .imgtwo");
+let reponumbertwo = document.querySelector(".reponumbertwo");
 
-formtwo.addEventListener("submit", function (event) {
-  event.preventDefault();
-
+inputtwo.addEventListener("input", function () {
   fetch(`https://api.github.com/users/${inputtwo.value}`)
     .then((response) => response.json())
     .then((data) => {
@@ -43,36 +38,48 @@ button.addEventListener("click", function () {
       parseInt(reponumber.innerHTML.split(" ")[3])
     ) {
       // Add celebration animation to winner
-
-      alert(inputtwo.value + " is the winner");
       const start = () => {
         setTimeout(function () {
-          confetti.start();
-        }, 1000);
+          for (let i = 0; i < 6; i++) {
+            confetti.start();
+          }
+        }, 100);
       };
 
       start();
 
-      confetti();
+      // Show confetti
+      for (let i = 0; i < 6; i++) {
+        confetti();
+      }
+
+      Swal.fire(inputtwo.value + " Is winner", "Congratulations!", "success");
     } else {
       // Hide loser
       // Add celebration animation to winner
 
-      alert(input.value + " is the winner");
+      Swal.fire(input.value + " Is winner", "Congratulations!", "success");
 
       const start = () => {
         setTimeout(function () {
-          confetti.start();
-        }, 1000);
+          for (let i = 0; i < 6; i++) {
+            confetti.start();
+          }
+        }, 100);
       };
 
       start();
 
-      confetti();
+      // Show confetti
+      for (let i = 0; i < 6; i++) {
+        confetti();
+      }
     }
-
-    // Show confetti
   } else {
-    alert("Please enter a value");
+    Swal.fire({
+      title: "Please Enter Value",
+      icon: "error",
+      confirmButtonText: "Ok",
+    });
   }
 });

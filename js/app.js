@@ -51,7 +51,7 @@ searchButtons.forEach((button) => {
         const allrepoinfo = document.querySelector(".container-repos");
         allrepoinfo.innerHTML = "";
 
-        for (let i = 0; i < repositories.length; i++) {
+        for (let i = 0; i < 6; i++) {
           const reposubject = document.createElement("div");
           reposubject.className = "all-repo-info";
           reposubject.style.border = "2px solid #d0d7de";
