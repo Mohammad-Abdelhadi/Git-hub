@@ -9,30 +9,30 @@ body {
   background-repeat: no-repeat; */
   /* background: linear-gradient(to right, #D3E0DC 50%, #E7EFF2 50%); */
   /* background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%); */
-  background: linear-gradient(to right, #D3E0DC 50%, #E7EFF2 50%);
-  background: linear-gradient(to right, #F0E5D8 50%, #F6F3F0 50%);
-  background: linear-gradient(to right, #EAE7DC 50%, #F5F3E6 50%);
-  background: linear-gradient(to right, #D3E4F5 50%, #E8F2FF 50%);
-  background: linear-gradient(to right, #D8EFEF 50%, #EAF9F9 50%);
-  background: linear-gradient(to right, #F3EBD6 50%, #FBF6E9 50%);
-  background: linear-gradient(to right, #F0E8D6 50%, #F8F6EB 50%);
-  background: linear-gradient(to right, #E6E4EC 50%, #F1F1F5 50%);
-  background: linear-gradient(to right, #E8EAEF 50%, #F2F4F8 50%);
-  background: linear-gradient(to right, #DCE3E8 50%, #E8F0F6 50%);
-  background: linear-gradient(to right, #F6F0E4 50%, #FEF9F3 50%);
-  background: linear-gradient(to right, #EBE7D5 50%, #F6F3EB 50%);
-  background: linear-gradient(to right, #DCE3E8 50%, #E8F0F6 50%);
-  background: linear-gradient(to right, #EAE4D2 50%, #F5F2E8 50%);
-  background: linear-gradient(to right, #F3F1E9 50%, #FBFAF4 50%);
-  background: linear-gradient(to right, #D2E5E8 50%, #E7F2F4 50%);
-  background: linear-gradient(to right, #F3ECE2 50%, #FBF8F3 50%);
-  background: linear-gradient(to right, #E2E5EA 50%, #F2F4F8 50%);
-  background: linear-gradient(to right, #D8E8E9 50%, #EAF6F6 50%);
-  background: linear-gradient(to right, #D8E8E9 50%, #EAF6F6 50%);
-  background: linear-gradient(to right, #F0E5D8 50%, #F6F3F0 50%);
-  background: linear-gradient(to right, #EAE7DC 50%, #F5F3E6 50%);
-  background: linear-gradient(to right, #E6E4EC 50%, #F1F1F5 50%);
-  background: linear-gradient(to right, #D3E4F5 50%, #E8F2FF 50%);
+  background: linear-gradient(to right, #d3e0dc 50%, #e7eff2 50%);
+  background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
+  background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
+  background: linear-gradient(to right, #d3e4f5 50%, #e8f2ff 50%);
+  background: linear-gradient(to right, #d8efef 50%, #eaf9f9 50%);
+  background: linear-gradient(to right, #f3ebd6 50%, #fbf6e9 50%);
+  background: linear-gradient(to right, #f0e8d6 50%, #f8f6eb 50%);
+  background: linear-gradient(to right, #e6e4ec 50%, #f1f1f5 50%);
+  background: linear-gradient(to right, #e8eaef 50%, #f2f4f8 50%);
+  background: linear-gradient(to right, #dce3e8 50%, #e8f0f6 50%);
+  background: linear-gradient(to right, #f6f0e4 50%, #fef9f3 50%);
+  background: linear-gradient(to right, #ebe7d5 50%, #f6f3eb 50%);
+  background: linear-gradient(to right, #dce3e8 50%, #e8f0f6 50%);
+  background: linear-gradient(to right, #eae4d2 50%, #f5f2e8 50%);
+  background: linear-gradient(to right, #f3f1e9 50%, #fbfaf4 50%);
+  background: linear-gradient(to right, #d2e5e8 50%, #e7f2f4 50%);
+  background: linear-gradient(to right, #f3ece2 50%, #fbf8f3 50%);
+  background: linear-gradient(to right, #e2e5ea 50%, #f2f4f8 50%);
+  background: linear-gradient(to right, #d8e8e9 50%, #eaf6f6 50%);
+  background: linear-gradient(to right, #d8e8e9 50%, #eaf6f6 50%);
+  background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
+  background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
+  background: linear-gradient(to right, #e6e4ec 50%, #f1f1f5 50%);
+  background: linear-gradient(to right, #d3e4f5 50%, #e8f2ff 50%);
 }
 .green-title {
   color: green;
@@ -54,7 +54,7 @@ body {
   font-size: 1.3rem;
 }
 .container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px 20px;
@@ -62,7 +62,8 @@ body {
   justify-content: center;
   width: 100%;
   height: 80vh;
-  margin: auto;
+  /* margin: auto; */
+  flex-wrap: wrap;
 }
 
 .leftside {
@@ -73,14 +74,15 @@ body {
   gap: 10px 0px;
   border: 1px solid black;
   padding: 19px;
-  margin: 0 auto; /* Add this line */
-  width: 50%;
-  height: 70%;
+  margin: 0 auto;
+  width: 30%;
+  height: 80%;
+  flex-wrap: wrap;
 }
 
 .leftside img {
-  width: 260px;
-  height: 260px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 
   -moz-border-radius: 50%;
@@ -118,4 +120,16 @@ body {
   color: white;
   background-color: black;
   height: 50px;
+}
+@media screen and (max-width: 568px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .leftside {
+    order: 1;
+    width: 30%;
+    max-width: none;
+  }
+
 }
