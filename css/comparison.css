@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  /* background-image: url(../images/vs8-edited.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
-  /* background: linear-gradient(to right, #D3E0DC 50%, #E7EFF2 50%); */
-  /* background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%); */
+  
   background: linear-gradient(to right, #d3e0dc 50%, #e7eff2 50%);
   background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
   background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
