@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  
   background: linear-gradient(to right, #d3e0dc 50%, #e7eff2 50%);
   background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
   background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
@@ -40,7 +39,7 @@ body {
 .leftside h1,
 .rightside h1 {
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   max-width: 100%;
   color: black;
 }
@@ -76,8 +75,8 @@ body {
 }
 
 .leftside img {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 
   -moz-border-radius: 50%;
