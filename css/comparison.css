@@ -3,32 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background: linear-gradient(to right, #d3e0dc 50%, #e7eff2 50%);
-  background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
-  background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
-  background: linear-gradient(to right, #d3e4f5 50%, #e8f2ff 50%);
-  background: linear-gradient(to right, #d8efef 50%, #eaf9f9 50%);
-  background: linear-gradient(to right, #f3ebd6 50%, #fbf6e9 50%);
-  background: linear-gradient(to right, #f0e8d6 50%, #f8f6eb 50%);
-  background: linear-gradient(to right, #e6e4ec 50%, #f1f1f5 50%);
-  background: linear-gradient(to right, #e8eaef 50%, #f2f4f8 50%);
-  background: linear-gradient(to right, #dce3e8 50%, #e8f0f6 50%);
-  background: linear-gradient(to right, #f6f0e4 50%, #fef9f3 50%);
-  background: linear-gradient(to right, #ebe7d5 50%, #f6f3eb 50%);
-  background: linear-gradient(to right, #dce3e8 50%, #e8f0f6 50%);
-  background: linear-gradient(to right, #eae4d2 50%, #f5f2e8 50%);
-  background: linear-gradient(to right, #f3f1e9 50%, #fbfaf4 50%);
-  background: linear-gradient(to right, #d2e5e8 50%, #e7f2f4 50%);
-  background: linear-gradient(to right, #f3ece2 50%, #fbf8f3 50%);
-  background: linear-gradient(to right, #e2e5ea 50%, #f2f4f8 50%);
-  background: linear-gradient(to right, #d8e8e9 50%, #eaf6f6 50%);
-  background: linear-gradient(to right, #d8e8e9 50%, #eaf6f6 50%);
-  background: linear-gradient(to right, #f0e5d8 50%, #f6f3f0 50%);
-  background: linear-gradient(to right, #eae7dc 50%, #f5f3e6 50%);
-  background: linear-gradient(to right, #e6e4ec 50%, #f1f1f5 50%);
-  background: linear-gradient(to right, #d3e4f5 50%, #e8f2ff 50%);
-}
+
 .green-title {
   color: green;
 }
